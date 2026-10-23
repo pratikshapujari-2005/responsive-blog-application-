@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register | InkFlow</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo">InkFlow</a>
+
+      <button class="menu-toggle" onclick="toggleMobileMenu()">☰</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="auth-wrapper">
+    <div class="card">
+      <h1>Create account</h1>
+      <p>Join InkFlow and start publishing your ideas.</p>
+
+      <div id="formMessage" class="form-message"></div>
+
+      <form id="registerForm" novalidate>
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="you@example.com" required>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="At least 6 characters" required>
+          </div>
+
+          <div class="form-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" placeholder="Repeat password" required>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width:100%">
+          Create Account
+        </button>
+      </form>
+
+      <p class="form-footer">
+        Already have an account? <a href="login.html">Login</a>
+      </p>
+    </div>
+  </main>
+
+  <script src="js/app.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

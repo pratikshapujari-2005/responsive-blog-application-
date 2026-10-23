@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Blog | InkFlow</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo">InkFlow</a>
+
+      <button class="menu-toggle" onclick="toggleMobileMenu()">☰</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="create-blog.html">Create Blog</a></li>
+        <li><button id="logoutButton" class="btn btn-outline">Logout</button></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="form-wrapper">
+    <div class="card wide">
+      <h1>Create a New Blog</h1>
+      <p>Writing as <strong id="authorName">Guest</strong></p>
+
+      <div id="formMessage" class="form-message"></div>
+
+      <form id="createBlogForm" novalidate>
+        <div class="form-group">
+          <label for="title">Blog Title</label>
+          <input type="text" id="title" placeholder="Enter a clear, engaging title" required>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="category">Category</label>
+            <select id="category">
+              <option>Technology</option>
+              <option>Design</option>
+              <option>Programming</option>
+              <option>Lifestyle</option>
+              <option>Business</option>
+              <option>Education</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="status">Status</label>
+            <select id="status">
+              <option value="Draft">Draft</option>
+              <option value="Published">Published</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="excerpt">Short Excerpt</label>
+          <textarea id="excerpt" placeholder="Write a short summary for the blog card" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="content">Blog Content</label>
+          <textarea id="content" placeholder="Write your full blog article here..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width:100%">
+          Save Blog
+        </button>
+      </form>
+    </div>
+  </main>
+
+  <script src="js/app.js"></script>
+  <script src="js/blogs.js"></script>
+</body>
+</html>

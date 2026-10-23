@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InkFlow | Share Your Ideas</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo">InkFlow</a>
+
+      <button class="menu-toggle" onclick="toggleMobileMenu()">☰</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="create-blog.html" class="btn btn-primary">Create Blog</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <h1>Write. Publish. Inspire.</h1>
+      <p>
+        InkFlow is a clean, responsive blogging platform where you can share
+        ideas, publish stories, and manage your content from a personal dashboard.
+      </p>
+
+      <div class="hero-actions">
+        <a href="register.html" class="btn btn-primary">Get Started</a>
+        <a href="#latest" class="btn btn-outline">Explore Blogs</a>
+      </div>
+    </section>
+
+    <section class="section container" id="latest">
+      <div class="section-head">
+        <div>
+          <h2>Latest Published Blogs</h2>
+          <p>Fresh articles from the InkFlow community.</p>
+        </div>
+        <a href="create-blog.html" class="btn btn-outline">Write a Blog</a>
+      </div>
+
+      <div class="blog-grid" id="homeBlogGrid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 InkFlow. Built with HTML, CSS, and JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="js/blogs.js"></script>
+</body>
+</html>
